@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace bfp4f_sharp_api
 {
-    class ApiCommunication
+    public class ApiCommunication
     {
         public const string BaseUrl = "http://battlefield.play4free.com/";
 
@@ -78,14 +78,20 @@ namespace bfp4f_sharp_api
                     _languageUrl = lang;
                     break;
                 default:
+                    //throw new Exception("Invalid language");
                     break;
             }
             
         }
 
+        public void setPath(string urlPath)
+        {
+            _urlPath = urlPath;
+        }
+
         public void prepare()
         {
-            request = (HttpWebRequest)WebRequest.Create(BaseUrl + _languageUrl + _urlPath);
+            request = (HttpWebRequest)WebRequest.Create(BaseUrl + _languageUrl + "/" + _urlPath);
             request.Accept = "application/json, text/javascript";
         }
 

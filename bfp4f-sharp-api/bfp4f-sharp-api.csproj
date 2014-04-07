@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ApiCommunication.cs" />
     <Compile Include="ApiStats.cs" />
+    <Compile Include="ApiStatsSingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
