@@ -12,7 +12,9 @@ namespace bfp4f_sharp_api
         {
             //ApiStats.getUserInfo("2627733530");
             //ApiStats.getSoldiers("2627733530");
-            Console.WriteLine(ApiStatsSingleton.Instance.getUserInfo("2627733530"));
+            //Console.WriteLine(ApiStatsSingleton.Instance.getUserInfo("2627733530"));
+            Console.WriteLine(ApiStatsDecoded.getUserInfo("2627733530").data.id.ToString());
+            Console.ReadKey();
         }
     }
 }

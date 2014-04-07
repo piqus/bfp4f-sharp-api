@@ -34,7 +34,7 @@ namespace bfp4f_sharp_api
 
         public ApiCommunication(string lang, string urlPath)
         {
-            _languageUrl = lang;
+            setLang(lang);
             _urlPath += urlPath;
         }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bfp4f_sharp_api
 {
-    public sealed class ApiStatsSingleton : ApiCommunication
+    public class ApiStatsSingleton : ApiCommunication
     {
         private static ApiStatsSingleton instance;
 
