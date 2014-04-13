@@ -14,8 +14,11 @@ namespace bfp4f_sharp_api
             //ApiStats.getSoldiers("2627733530");
             //Console.WriteLine(ApiStatsSingleton.Instance.getUserInfo("2627733530"));
             //Console.WriteLine(ApiStatsDecoded.getUserInfo("2627733530").data.id.ToString());
-            Console.WriteLine(ApiStatsDecoded.getLoadout("2627733530", "609452444").data.apparel[1].buyable.ToString());
-            Console.WriteLine(ApiStatsDecoded.getLoadout("2627733530", "778741036").data.apparel[1].buyable.ToString());
+            //Console.WriteLine(ApiStatsDecoded.getLoadout("2627733530", "609452444").data.apparel[1].buyable.ToString());
+            //Console.WriteLine(ApiStatsDecoded.getLoadout("2627733530", "778741036").data.apparel[1].buyable.ToString());
+            Console.WriteLine(ApiStatsDecoded.getSoldiers("2627733530").data[1].id.ToString());
+            
+            Console.WriteLine(" Press any key to continue . . . ");
             Console.ReadKey();
         }
     }

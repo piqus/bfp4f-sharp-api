@@ -14,7 +14,6 @@ namespace bfp4f_sharp_api
         public static string getUserInfo(string profileId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/userInfo/" + profileId);
-            api.prepare();
             return api.call();
         }
 
@@ -25,7 +24,6 @@ namespace bfp4f_sharp_api
         public static string getSoldiers(string profileId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/soldiers/" + profileId);
-            api.prepare();
             return api.call();
         }
 
@@ -35,7 +33,6 @@ namespace bfp4f_sharp_api
         public static string getLoadout(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/loadout/" + profileId + "/" + soldierId);
-            api.prepare();
             return api.call();
         }
 
@@ -45,7 +42,6 @@ namespace bfp4f_sharp_api
         public static string getCoreStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22CoreStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -55,7 +51,6 @@ namespace bfp4f_sharp_api
         public static string getBadPlayerStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22BadPlayerStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -65,7 +60,6 @@ namespace bfp4f_sharp_api
         public static string getVehicleStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22VehicleStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -75,7 +69,6 @@ namespace bfp4f_sharp_api
         public static string getMapStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22MapStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -85,7 +78,6 @@ namespace bfp4f_sharp_api
         public static string getGameModeMapStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameModeMapStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -95,7 +87,6 @@ namespace bfp4f_sharp_api
         public static string getWeaponStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22WeaponStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -105,7 +96,6 @@ namespace bfp4f_sharp_api
         public static string getGameModeStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameModeStats%22]");
-            api.prepare();
             return api.call();
         }
 
@@ -115,7 +105,6 @@ namespace bfp4f_sharp_api
         public static string getRushMapStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22RushMapStats%22]&_?=1351945928776");
-            api.prepare();
             return api.call();
         }
 
@@ -125,7 +114,6 @@ namespace bfp4f_sharp_api
         public static string getGameEventStats(string profileId, string soldierId, string lang = "en")
         {
             ApiCommunication api = new ApiCommunication(lang, "profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameEventStats%22]");
-            api.prepare();
             return api.call();
         }
     }

@@ -16,13 +16,6 @@ namespace bfp4f_sharp_api
 
         protected string _urlPath = "/";
 
-        public HttpWebRequest request
-        {
-            get;
-            set;
-        }
-        protected HttpWebResponse response;
-
         public ApiCommunication()
         {
         }
@@ -89,15 +82,12 @@ namespace bfp4f_sharp_api
             _urlPath = urlPath;
         }
 
-        public void prepare()
-        {
-            request = (HttpWebRequest)WebRequest.Create(BaseUrl + _languageUrl + "/" + _urlPath);
-            request.Accept = "application/json, text/javascript";
-        }
-
         public string call()
         {
-            response = (HttpWebResponse)request.GetResponse();
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(BaseUrl + _languageUrl + "/" + _urlPath);
+            request.Accept = "application/json, text/javascript";
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             string json = "";
             using (StreamReader responseStream = new StreamReader(response.GetResponseStream()))
             {

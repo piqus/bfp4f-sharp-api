@@ -52,6 +52,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vos\GetLoadoutVO.cs" />
+    <Compile Include="vos\GetSoldiersVO.cs" />
     <Compile Include="vos\GetUserInfoVO.cs" />
   </ItemGroup>
   <ItemGroup>

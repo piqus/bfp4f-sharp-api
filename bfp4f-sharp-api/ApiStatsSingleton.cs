@@ -33,7 +33,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/userInfo/" + profileId);
-            instance.prepare();
             return instance.call();
         }
 
@@ -44,7 +43,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/soldiers/" + profileId);
-            instance.prepare();
             return instance.call();
         }
 
@@ -55,7 +53,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/loadout/" + profileId + "/" + soldierId);
-            instance.prepare();
             return instance.call();
         }
 
@@ -66,7 +63,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22CoreStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -77,7 +73,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22BadPlayerStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -88,7 +83,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22VehicleStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -99,7 +93,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22MapStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -110,7 +103,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameModeMapStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -121,7 +113,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22WeaponStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -132,7 +123,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameModeStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
@@ -143,7 +133,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22RushMapStats%22]&_?=1351945928776");
-            instance.prepare();
             return instance.call();
         }
 
@@ -154,7 +143,6 @@ namespace bfp4f_sharp_api
         {
             instance.setLang(lang);
             instance.setPath("profile/stats/" + profileId + "/" + soldierId + "?g=[%22GameEventStats%22]");
-            instance.prepare();
             return instance.call();
         }
 
