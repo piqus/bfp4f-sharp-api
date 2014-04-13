@@ -11,5 +11,10 @@ namespace bfp4f_sharp_api
         {
             return JsonConvert.DeserializeObject<GetUserInfoVO>(ApiStatsSingleton.Instance.getUserInfo(profileId, lang));
         }
+
+        public static GetLoadoutVO getLoadout(string profileId, string soldierId, string lang = "en")
+        {
+            return JsonConvert.DeserializeObject<GetLoadoutVO>(ApiStatsSingleton.Instance.getLoadout(profileId, soldierId, lang));
+        }
     }
 }
